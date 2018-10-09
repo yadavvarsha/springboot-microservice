@@ -14,6 +14,14 @@ public class ForexController {
   @Autowired
   private ExchangeValueRepository repository;
   
+   /**
+	 * @api {GET} /currency-exchange/from/{from}/to/{to} Example to retrieve exchange value
+	 * 
+	 * @apiName retrieveExchangeValue
+	 * 
+	 * @apiParam (Url) {from} {to} Message that you want to be echoed
+	 */
+    
   @GetMapping("/currency-exchange/from/{from}/to/{to}")
   public ExchangeValue retrieveExchangeValue
     (@PathVariable String from, @PathVariable String to){
