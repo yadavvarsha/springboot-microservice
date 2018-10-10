@@ -19,7 +19,8 @@ public class ForexController {
 	 * 
 	 * @apiName retrieveExchangeValue
 	 * 
-	 * @apiParam (Url) {from} {to} Message that you want to be echoed
+	 * @apiParam {String} from Message that you want to be echoed
+         * @apiParam {String} to Message that you want to be echoed
 	 */
     
   @GetMapping("/currency-exchange/from/{from}/to/{to}")
